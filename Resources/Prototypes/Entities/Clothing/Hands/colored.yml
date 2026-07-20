@@ -452,7 +452,17 @@
   id: ClothingHandsGlovesColorYellow
   name: insulated gloves
   description: These gloves will protect the wearer from electric shocks.
-
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: Insuzine
+          Quantity: 10
+          
 # Budget Insulated Gloves
 - type: entity
   parent: ClothingHandsGlovesColorYellowBase # Goob
